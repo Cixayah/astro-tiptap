@@ -1,49 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="light">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Notes App</title>
-	</head>
-	<body>
-        <slot />
-	</body>
+<!doctype html>
+<html lang="pt-BR" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-    *, ::after, ::before{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-    :root{
-        --font-sans: 'Inter', sans-serif;
-        --font-mono: 'Fira Mono', monospace;
-        --font-serif: 'Merriweather', serif;
-        --color-bg:#0b090d;
-        --color-text:#dadada;
-        --color-primary: #1d294d;
-        --border-color: color-mix(in srgb, var(--color-text)4%, var(--color-primary) 30%);
-    }
-    html{
-            font-family: var(--font-sans);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-        
-    }
-    html.light{
-        --color-bg: #dadada;
-        --color-text: #0b080d;
-        --border-color: color-mix(in srgb, var(--color-text)4%, var(--color-primary) 30%);
-    }
-    body {
-        min-height: 100vh;
-    }
-    h1,h2,h3,h4,h5,h6{
-        font-weight: 600;
-    }
-    p{
-        line-height: 1.6;
-    }
+  :root {
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Fira Mono', monospace;
+    --font-serif: 'Merriweather', serif;
+    --color-bg: #0b090d;
+    --color-text: #dadada;
+    --color-primary: #1d294d;
+    --border-color: color-mix(
+      in srgb,
+      var(--color-text) 4%,
+      var(--color-primary) 30%
+    );
+  }
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  html.light {
+    --color-bg: #dadada;
+    --color-text: #0b080d;
+    --border-color: color-mix(
+      in srgb,
+      var(--color-text) 4%,
+      var(--color-primary) 30%
+    );
+  }
+  body {
+    min-height: 100vh;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+  p {
+    line-height: 1.6;
+  }
 </style>
