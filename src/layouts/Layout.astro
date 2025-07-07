@@ -10,3 +10,26 @@
         <slot />
 	</body>
 </html>
+<style is:global>
+    *, ::after, ::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root{
+        --font-sans: 'Inter', sans-serif;
+        --font-mono: 'Fira Mono', monospace;
+        --font-serif: 'Merriweather', serif;
+        --color-bg:#0b090d;
+        --color-text:#dadada;
+        --color-primary: #1d294d;
+        --border-color: color-mix(in srgb, var(--color-text)4%, var(--color-primary) 30%);
+    }
+    html{
+            font-family: var(--font-sans);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        
+    }
+</style>
