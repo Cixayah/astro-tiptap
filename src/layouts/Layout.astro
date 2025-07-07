@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="light">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -31,5 +31,10 @@
             background-color: var(--color-bg);
             color: var(--color-text);
         
+    }
+    html.light{
+        --color-bg: #dadada;
+        --color-text: #0b080d;
+        --border-color: color-mix(in srgb, var(--color-text)4%, var(--color-primary) 30%);
     }
 </style>
