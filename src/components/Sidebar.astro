@@ -1,0 +1,40 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <button
+      id="new-note"
+      class="new-note-btn"
+      title="Nova nota"
+      aria-label="Nova nota">novo</button
+    >
+    <button
+      id="remove-note"
+      class="remove-note-btn"
+      title="Remover nota"
+      aria-label="Remover nota">deletar</button
+    >
+  </div>
+  <div id="notes-list" class="notes-list"></div>
+  <div class="note-item">Item</div>
+  <div class="note-item">Nota 2</div>
+</aside>
+<style>
+  .sidebar {
+    width: 250px;
+    background-color: color-mix(
+      in srgb,
+      var(--color-primary) 30%,
+      var(--color-bg)
+    );
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>

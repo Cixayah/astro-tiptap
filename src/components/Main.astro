@@ -1,16 +1,18 @@
 ---
-import Editor from "./Editor.astro";
+import Editor from './Editor.astro';
+import Sidebar from './Sidebar.astro';
 ---
 
 <main class="container">
-<Editor />
+  <Sidebar />
+  <Editor />
 </main>
 
 <style>
-    .container {
-      display: flex;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-    }
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
 </style>
